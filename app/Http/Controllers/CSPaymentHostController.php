@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Ramsey\Uuid\Uuid;
-
+use Illuminate\Support\Facades\Log;
 class CSPaymentHostController extends Controller
 {
     
@@ -36,5 +36,14 @@ class CSPaymentHostController extends Controller
         $data['signature'] = $hash_encode;
         
         return view('cybersource.pay')->with(['form_data' => $data]);
+    }
+
+    public function successful(Request $request)
+    {         
+        Log::info(['CSResponsePaymentLog'=>$request->all()]);
+        
+        $response = true;
+
+        return view('cybersource.api.payment-complete', compact('response'));
     }
 }
