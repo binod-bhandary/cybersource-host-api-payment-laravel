@@ -29,4 +29,4 @@ Route::group(['prefix' => 'webhook'], function () {
 /* HOSTED CHECKOUT URL */
 Route::get('/hosted-pay',[CSPaymentHostController::class, 'index'])->name('hosted-pay');
 Route::post('/confirm-pay',[CSPaymentHostController::class, 'confirm'])->name('confirm-pay');
-Route::get('/payment-successful',[CSPaymentHostController::class, 'successful'])->name('successful');
+Route::post('/payment-successful',[CSPaymentHostController::class, 'successful'])->name('successful');
