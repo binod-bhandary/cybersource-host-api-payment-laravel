@@ -53,8 +53,7 @@
         <label>Your Response Data</label>
         <Pre>
             @foreach($response as $key=>$value)
-                <label for="comments" class="font-medium text-gray-900">{{$key}}</label>
-                <p class="text-gray-500">{{ $value }}</p>
+                {{$key}}<p class="text-gray-500">{{ $value }}</p>
             @endforeach
         </Pre>
     </div>

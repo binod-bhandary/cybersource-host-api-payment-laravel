@@ -12,7 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- Styles --> 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('build/assets/app-96199229.css') }}" rel="stylesheet">
 </head>
 
 <body class="font-sans antialiased text-gray-600 min-h-full flex flex-col [overflow-anchor:none]">
