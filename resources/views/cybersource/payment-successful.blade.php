@@ -51,16 +51,12 @@
         <p>Thank you for your purchase. Your payment has been successfully processed.</p>
         <a href="{{ url('/') }}" class="back-to-home">Back to Home</a>
         <label>Your Response Data</label>
-        <fieldset>
+        <Pre>
             @foreach($response as $key=>$value)
-                <div class="sm:col-span-2">
-                    <div class="text-sm leading-6">
-                        <label for="comments" class="font-medium text-gray-900">{{$key}}</label>
-                        <p class="text-gray-500">{{ $value }}</p>
-                    </div>
-                </div>
+                <label for="comments" class="font-medium text-gray-900">{{$key}}</label>
+                <p class="text-gray-500">{{ $value }}</p>
             @endforeach
-        </fieldset>
+        </Pre>
     </div>
 </body>
 </html>
