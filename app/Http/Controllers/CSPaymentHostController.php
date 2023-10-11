@@ -42,7 +42,7 @@ class CSPaymentHostController extends Controller
     {         
         Log::info(['CSResponsePaymentLog'=>$request->all()]);
         
-        $response = true;
-        return view('cybersource.api.payment-complete', compact('response'));
+        $response = $request->all();
+        return view('cybersource.payment-successful', compact('response'));
     }
 }
