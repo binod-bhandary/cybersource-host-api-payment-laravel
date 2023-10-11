@@ -32,21 +32,12 @@
                     <input type="hidden" name="unsigned_field_names" value="card_type,card_number,card_expiry_date">
                     <input type="hidden" name="signed_date_time" value="{{ @$data['signed_date_time'] }}">
                     <input type="hidden" name="locale" value="en">
-                    <input type="hidden" name="auth_trans_ref_no" value="">
-                    {{--  <input type="hidden" name="bill_to_forename" value="Basant">
-                     <input type="hidden" name="bill_to_surname" value="Joshi">
-                     <input type="hidden" name="bill_to_email" value="joshibasantraj@gmail.com">
-                     <input type="hidden" name="bill_to_phone" value="9742395923">
-                     <input type="hidden" name="bill_to_address_line1" value="Kathmandu">
-                     <input type="hidden" name="bill_to_address_city" value="Kathmandu">
-                     <input type="hidden" name="bill_to_address_state" value="Kathmandu">
-                     <input type="hidden" name="bill_to_address_country" value="NP">
-                     <input type="hidden" name="bill_to_address_postal_code" value="Kathmandu">  --}}
-                    <input type="hidden" name="bill_to_forename" value="Ashish">
-                    <input type="hidden" name="bill_to_surname" value="dahal">
-                    <input type="hidden" name="bill_to_email" value="ashishdahal490@gmail.com">
+                    <input type="hidden" name="auth_trans_ref_no" value="1234">
+                    <input type="hidden" name="bill_to_forename" value="Binod">
+                    <input type="hidden" name="bill_to_surname" value="Bhandary">
+                    <input type="hidden" name="bill_to_email" value="binod.bhandary@nicasiabank.com">
                     <input type="hidden" name="bill_to_phone" value="9801111111">
-                    <input type="hidden" name="bill_to_address_line1" value="baneshwor">
+                    <input type="hidden" name="bill_to_address_line1" value="thapathali">
                     <input type="hidden" name="bill_to_address_city" value="kathmandu">
                     <input type="hidden" name="bill_to_address_state" value="kathmandu">
                     <input type="hidden" name="bill_to_address_country" value="NP">
@@ -54,12 +45,15 @@
 
                     <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                         <div class="sm:col-span-3">
+                            
+                            <label>Amount</label>     
                             <div class="mt-2">
                                 <input type="text" name="amount" id="amount" autocomplete="amount" value="1000"
                                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             </div>
                         </div>
                         <div class="sm:col-span-3">
+                            <label>Transaction Type</label>     
                             <div class="mt-2">
                                 <input type="text" name="transaction_type" id="transaction_type"
                                     autocomplete="transaction_type" value="sale"
@@ -67,6 +61,7 @@
                             </div>
                         </div>
                         <div class="sm:col-span-3">
+                            <label>Reference Number</label>                            
                             <div class="mt-2">
                                 <input type="text" name="reference_number" id="reference_number"
                                     autocomplete="reference_number" value="1234"
@@ -74,17 +69,18 @@
                             </div>
                         </div>
                         <div class="sm:col-span-3">
+                            <label>Currency</label>
                             <div class="mt-2">
                                 <input type="text" name="currency" id="currency" autocomplete="currency"
-                                    value="NP"
+                                    value="NPR"
                                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             </div>
                         </div>
                     </div>
-                    <input type="hidden" value="card" name="payment_method" placeholder="">
+                    <input type="hidden" name="payment_method" value="card" placeholder="">
                     <input type="hidden" name="signature" value="">
                     <input type="hidden" name="card_type" value="001">
-                    <input type="hidden" name="card_number" value="">
+                    <input type="hidden" name="card_number" value="4111111111111111">
                     <input type="hidden" name="card_expiry_date" value="">
                     <div class="mt-6 flex items-center justify-end gap-x-6">
                         <a href="{{ route('home') }}" class="text-sm font-semibold leading-6 text-gray-900">Cancel</a>

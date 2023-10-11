@@ -147,7 +147,7 @@ class HomeController extends Controller
                     "VALIDATE_CONSUMER_AUTHENTICATION"
                 ]
             ],
-            "orderInformation" => [
+            "orderInformation" => [ 
                 "billTo" => [
                     "country" => "US",
                     "lastName" => "VDP",
