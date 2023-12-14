@@ -83,7 +83,6 @@ class ExternalConfiguration
             $config->setPortfolioID($this->portfolioID);
             $config->setKeysDirectory(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . $this->keyDirectory);
             $config->setRunEnvironment($this->runEnv);
-
             // New Logging
             $logConfiguration = new LogConfiguration();
             $logConfiguration->enableLogging($this->enableLogging);

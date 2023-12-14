@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="p-8 bg-gray-100 dark:bg-gray-800 flex flex-col lg:w-full xl:w-3/5">
-                        <form id="formSubmit" action="/api-pay" method="post" >                            
+                        <form id="formSubmit" action="/api-pay" method="post" >
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                         <button
                             class="border border-transparent hover:border-gray-300 bg-gray-900 dark:bg-white dark:hover:bg-gray-900 dark:hover:border-gray-900 dark:text-gray-900 dark:hover:text-white hover:bg-white text-white hover:text-gray-900 flex flex-row justify-center items-center space-x-2 py-4 rounded w-full">
@@ -101,7 +101,7 @@
                                     type="text" name="expiration_month" id="card-month-expiry" placeholder="MM" value="03" />
                                 <input
                                     class="border rounded-bl border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                                    type="text" name="expiration_year" id="card-year-expiry" placeholder="YYYY"  />
+                                    type="text" name="expiration_year" id="card-year-expiry" placeholder="YYYY"  value="2025" />
                                 <input
                                     class="border rounded-br border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
                                     type="text" name="security_code" id="card-cvc" placeholder="CVC" value="305"/>
@@ -153,20 +153,20 @@
                                 type="text" name="zip" id="" placeholder="ZIP" value="44600" />
                         </div>
 
-                        <button id="pay-auth" type="submit" 
+                        <button id="pay-auth" type="submit"
                             class="mt-8 border border-transparent hover:border-gray-300 dark:bg-white dark:hover:bg-gray-900 dark:text-gray-900 dark:hover:text-white dark:border-transparent bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full">
                             <div>
                                 <p class="text-base leading-4">Pay </p>
                             </div>
                         </button>
-                        
+
                     </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 
@@ -194,17 +194,17 @@
             .then(response => {
                 if(response.status == 'COMPLETED'){
                     var form = document.createElement("form");
-                    var element1 = document.createElement("input"); 
+                    var element1 = document.createElement("input");
                     form.method = "POST";
-                    form.action = response.clientInfomation.deviceDataCollectionUrl;   
+                    form.action = response.clientInfomation.deviceDataCollectionUrl;
                     element1.value = response.clientInfomation.accessToken;
                     element1.name="JWT";
-                    form.appendChild(element1);  
+                    form.appendChild(element1);
                     document.body.appendChild(form);
                     form.submit();
                     console.log("verified");
                 }
-                
+
                 // handle the response
             })
             .catch(error => {
@@ -224,21 +224,21 @@
         //             'Content-type': 'application/json; charset=UTF-8',
         //         }
         //     })
-        //     .then(response => response.json()) 
+        //     .then(response => response.json())
         //     .then(response => {
         //         console.log(response);
         //         if(response.status == 'PENDING_AUTHENTICATION'){
         //             let jwt = response.authenticationInformation.accessToken;
         //             // $.post(response.authenticationInformation.stepUpUrl,   // url
-        //             // { 
+        //             // {
         //             //     JWT: jwt,
         //             //     MD: 'CRA37852129',
         //             // }, // data to be submit
         //             // function(data, status, jqXHR) {
         //             //     // success callback
         //             //     // $('p').append('status: ' + status + ', data: ' + data);
-        //             // });              
-        //         }                
+        //             // });
+        //         }
         //     })
         //     .catch(error => {
         //         console.log(error.getMessage());   // handle the error
