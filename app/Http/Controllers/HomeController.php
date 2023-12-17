@@ -60,7 +60,7 @@ class HomeController extends Controller
         return view('cybersource.api.apipay-main', compact('data'));
     }
 
-    
+
     /* STEP2:- Authentication the payment */
     public function apiPost(Request $request)
     {
@@ -112,25 +112,26 @@ class HomeController extends Controller
 
         $data = [
             'cardinalStepUpURL' => config('csservices.live') ? config('csservices.cardinalStepUpURL_live') : config('csservices.cardinalStepUpURL'),
-            'jwt' =>'1234test'
+            // 'jwt' =>'1234test'
+            'jwt' =>$request->_jwttoken
         ];
         $response = $this->repo->createAuthentication($cardParsedAry);
         Log::info(['CSautheLog'=>$response]);
         if($response['status'] =='PENDING_AUTHENTICATION'){
             $data['jwt'] = $response['authenticationInformation']->accessToken;
-            // $data['jwt'] = $response['authenticationInformation']->pareq;    
+            // $data['jwt'] = $response['authenticationInformation']->pareq;
         }
         elseif ($response['status'] =='AUTHORIZED'){
             $data['transacationID']= $response['authenticationInformation']->authenticationTransactionId;
         }
-        
+
         return view('cybersource.api.auth-iframe', compact('data'));
     }
-    
+
     /* STEP3:- confirm the payment */
     public function apiConfirmPayRedirect(Request $request)
-    { 
-        
+    {
+
         Log::info(['CSResponseLog'=>$request->all()]);
         $cardParsedAry =  [
             "clientReferenceInformation" => [
@@ -147,7 +148,7 @@ class HomeController extends Controller
                     "VALIDATE_CONSUMER_AUTHENTICATION"
                 ]
             ],
-            "orderInformation" => [ 
+            "orderInformation" => [
                 "billTo" => [
                     "country" => "US",
                     "lastName" => "VDP",

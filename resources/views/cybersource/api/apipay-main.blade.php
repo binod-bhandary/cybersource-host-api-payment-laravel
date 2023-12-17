@@ -57,6 +57,7 @@
                     <div class="p-8 bg-gray-100 dark:bg-gray-800 flex flex-col lg:w-full xl:w-3/5">
                         <form id="formSubmit" action="/api-pay" method="post" >
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                        <input type="hidden" name="_jwttoken" value="{{ csrf_token() }}" />
                         <button
                             class="border border-transparent hover:border-gray-300 bg-gray-900 dark:bg-white dark:hover:bg-gray-900 dark:hover:border-gray-900 dark:text-gray-900 dark:hover:text-white hover:bg-white text-white hover:text-gray-900 flex flex-row justify-center items-center space-x-2 py-4 rounded w-full">
                             <div>
@@ -153,6 +154,8 @@
                                 type="text" name="zip" id="" placeholder="ZIP" value="44600" />
                         </div>
 
+
+                        <input type="hidden" name="_jwttoken" id="jwt_token" value="#" />
                         <button id="pay-auth" type="submit"
                             class="mt-8 border border-transparent hover:border-gray-300 dark:bg-white dark:hover:bg-gray-900 dark:text-gray-900 dark:hover:text-white dark:border-transparent bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full">
                             <div>
@@ -166,6 +169,10 @@
             </div>
         </div>
     </div>
+    <iframe id="cardinal_collection_iframe" name="collectionIframe" height="10" width="10" style="display: none;"></iframe>
+    <form id="cardinal_collection_form" method="POST" target="collectionIframe" action="<?= $data['deviceDataCollectionURL']; ?>">
+        <input id="cardinal_collection_form_input" type="hidden" name="JWT" value="">
+    </form>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
@@ -175,6 +182,8 @@
             var cardNum=document.getElementById('card-number').value;
             var cardMonthExpiry=document.getElementById('card-month-expiry').value;
             var cardYearExpiry=document.getElementById('card-year-expiry').value;
+            var cardinalCollectionFormInput=document.getElementById('cardinal_collection_form_input');
+            var jwt_token=document.getElementById('jwt_token');
             let url = '/api/cybsersource/auth-setup';
 
             // fetch(url,
@@ -226,15 +235,20 @@
             success:function(response){
                 console.log(response);
                 if(response.status == 'COMPLETED'){
-                    var form = document.createElement("form");
-                    var element1 = document.createElement("input");
-                    form.method = "POST";
-                    form.action = response.clientInfomation.deviceDataCollectionUrl;
-                    element1.value = response.clientInfomation.accessToken;
-                    element1.name="JWT";
-                    form.appendChild(element1);
-                    document.body.appendChild(form);
-                    form.submit();
+                    // var form = document.createElement("form");
+                    // var element1 = document.createElement("input");
+                    // form.method = "POST";
+                    // form.action = response.clientInfomation.deviceDataCollectionUrl;
+                    // element1.value = response.clientInfomation.accessToken;
+                    // element1.name="JWT";
+                    // form.appendChild(element1);
+                    // document.body.appendChild(form);
+                    // form.submit();
+                    var cardinalCollectionForm = document.querySelector('#cardinal_collection_form');
+                    cardinalCollectionForm.action     =  response.clientInfomation.deviceDataCollectionUrl;
+                    cardinalCollectionFormInput.value =  response.clientInfomation.accessToken;
+                    jwt_token.value =  response.clientInfomation.accessToken;
+                    if (cardinalCollectionForm) cardinalCollectionForm.submit();
                     console.log("verified");
                 }
             },
