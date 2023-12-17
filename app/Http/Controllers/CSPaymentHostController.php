@@ -7,7 +7,7 @@ use Ramsey\Uuid\Uuid;
 use Illuminate\Support\Facades\Log;
 class CSPaymentHostController extends Controller
 {
-    
+
     public function index()
     {
         $data = [];
@@ -34,14 +34,14 @@ class CSPaymentHostController extends Controller
         $hash_code = hash_hmac('sha256', $signed_string, env('HS_SECRET_KEY'), true);
         $hash_encode = base64_encode($hash_code);
         $data['signature'] = $hash_encode;
-        
+
         return view('cybersource.pay')->with(['form_data' => $data]);
     }
 
     public function successful(Request $request)
-    {         
+    {
         Log::info(['CSResponsePaymentLog'=>$request->all()]);
-        
+
         $response = $request->all();
         return view('cybersource.payment-successful', compact('response'));
     }

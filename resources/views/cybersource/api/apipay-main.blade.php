@@ -101,7 +101,7 @@
                                     type="text" name="expiration_month" id="card-month-expiry" placeholder="MM" value="03" />
                                 <input
                                     class="border rounded-bl border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                                    type="text" name="expiration_year" id="card-year-expiry" placeholder="YYYY"  value="2025" />
+                                    type="text" name="expiration_year" id="card-year-expiry" placeholder="YYYY"  value="2023" />
                                 <input
                                     class="border rounded-br border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
                                     type="text" name="security_code" id="card-cvc" placeholder="CVC" value="305"/>
@@ -177,21 +177,54 @@
             var cardYearExpiry=document.getElementById('card-year-expiry').value;
             let url = '/api/cybsersource/auth-setup';
 
-            fetch(url,
-            {
-                method: 'POST',
-                body: JSON.stringify({
+            // fetch(url,
+            // {
+            //     method: 'POST',
+            //     body: JSON.stringify({
+            //         card_number:cardNum,
+            //         expiration_month:cardMonthExpiry,
+            //         expiration_year:cardYearExpiry,
+            //         type:'001', //visa
+
+            //     }),
+            //     headers: {
+            //         'Content-type': 'application/json; charset=UTF-8',
+            //         "Accept": "application/json, text-plain, */*",
+            //         "X-Requested-With": "XMLHttpRequest"
+            //     }
+            // })
+            // .then(response => {
+            //     if(response.status == 'COMPLETED'){
+            //         var form = document.createElement("form");
+            //         var element1 = document.createElement("input");
+            //         form.method = "POST";
+            //         form.action = response.clientInfomation.deviceDataCollectionUrl;
+            //         element1.value = response.clientInfomation.accessToken;
+            //         element1.name="JWT";
+            //         form.appendChild(element1);
+            //         document.body.appendChild(form);
+            //         form.submit();
+            //         console.log("verified");
+            //     }
+
+            //     // handle the response
+            // })
+            // .catch(error => {
+            //     console.log(error.getMessage());
+            //     // handle the error
+            // });
+
+            $.ajax({
+                url:url,
+                type:"POST",
+                data:{
                     card_number:cardNum,
                     expiration_month:cardMonthExpiry,
                     expiration_year:cardYearExpiry,
                     type:'001', //visa
-
-                }),
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                }
-            })
-            .then(response => {
+                },
+            success:function(response){
+                console.log(response);
                 if(response.status == 'COMPLETED'){
                     var form = document.createElement("form");
                     var element1 = document.createElement("input");
@@ -204,12 +237,11 @@
                     form.submit();
                     console.log("verified");
                 }
+            },
+            error: function(error) {
+                console.log(error);
 
-                // handle the response
-            })
-            .catch(error => {
-                console.log(error.getMessage());
-                // handle the error
+               }
             });
         });
         /* pay authentication */
