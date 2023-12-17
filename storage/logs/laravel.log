@@ -1,0 +1,1732 @@
+[2023-10-11 05:19:12] local.INFO: array (
+  'CSResponsePaymentLog' => 
+  array (
+  ),
+)  
+[2023-10-11 07:03:06] local.ERROR: Unable to locate file in Vite manifest: resources/css/app.css. {"view":{"view":"D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\resources\\views\\home.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-448545380 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#288</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-448545380\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","data":"<pre class=sf-dump id=sf-dump-1831285079 data-indent-pad=\"  \"><span class=sf-dump-note>array:4</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>access_key</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>profile_id</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>transaction_uuid</span>\" => \"<span class=sf-dump-str title=\"36 characters\">a78dea22-d860-41ba-8392-15041d9169f9</span>\"
+  \"<span class=sf-dump-key>signed_date_time</span>\" => \"<span class=sf-dump-str title=\"20 characters\">2023-10-11T07:03:06Z</span>\"
+</samp>]
+</pre><script>Sfdump(\"sf-dump-1831285079\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Unable to locate file in Vite manifest: resources/css/app.css. at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:737)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(279): Illuminate\\Foundation\\Vite->chunk(Array, 'resources/css/a...')
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\resources\\views\\home.blade.php(13): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('D:\\\\Projects\\\\NIC...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Projects\\\\NIC...', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Projects\\\\NIC...', Array)
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(195): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Projects\\\\NIC...', Array)
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(178): Illuminate\\View\\View->getContents()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(147): Illuminate\\View\\View->renderContents()
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(911): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(878): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+
+[previous exception] [object] (Exception(code: 0): Unable to locate file in Vite manifest: resources/css/app.css. at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:737)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(279): Illuminate\\Foundation\\Vite->chunk(Array, 'resources/css/a...')
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\storage\\framework\\views\\6c6c761ec825e18c339ca147e461d6a9.php(13): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('D:\\\\Projects\\\\NIC...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Projects\\\\NIC...', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Projects\\\\NIC...', Array)
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(195): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Projects\\\\NIC...', Array)
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(178): Illuminate\\View\\View->getContents()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(147): Illuminate\\View\\View->renderContents()
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(911): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(878): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+"} 
+[2023-12-14 04:15:49] local.ERROR: [ERROR] : MerchantID is mandatory
+
+Merchant ApikeyId is Mandatory
+
+ MerchantSecretKey is Mandatory
+
+ {"exception":"[object] (CyberSource\\Authentication\\Core\\AuthException(code: 0): [ERROR] : MerchantID is mandatory
+
+
+Merchant ApikeyId is Mandatory
+
+
+ MerchantSecretKey is Mandatory
+
+
+ at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\cybersource\\rest-client-php\\lib\\Authentication\\Core\\MerchantConfiguration.php:1130)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Helpers\\ExternalConfiguration.php(99): CyberSource\\Authentication\\Core\\MerchantConfiguration->validateMerchantData()
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Helpers\\ExternalConfiguration.php(67): App\\Helpers\\ExternalConfiguration->merchantConfigObject()
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Repositories\\CyberSourceRepository.php(80): App\\Helpers\\ExternalConfiguration->__construct()
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\HomeController.php(117): App\\Repositories\\CyberSourceRepository->createAuthentication(Array)
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->apiPost(Object(Illuminate\\Http\\Request))
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('apiPost', Array)
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'apiPost')
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#47 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#48 {main}
+"} 
+[2023-12-14 04:15:58] local.ERROR: foreach() argument must be of type array|object, string given {"exception":"[object] (ErrorException(code: 0): foreach() argument must be of type array|object, string given at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php:55)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php(55): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Api\\CSVerificationController.php(53): App\\Http\\Controllers\\Controller->error('[ERROR] : Merch...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\CSVerificationController->authSetup(Object(Illuminate\\Http\\Request))
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('authSetup', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\CSVerificationController), 'authSetup')
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 {main}
+"} 
+[2023-12-14 04:15:59] local.ERROR: foreach() argument must be of type array|object, string given {"exception":"[object] (ErrorException(code: 0): foreach() argument must be of type array|object, string given at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php:55)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php(55): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Api\\CSVerificationController.php(53): App\\Http\\Controllers\\Controller->error('[ERROR] : Merch...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\CSVerificationController->authSetup(Object(Illuminate\\Http\\Request))
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('authSetup', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\CSVerificationController), 'authSetup')
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 {main}
+"} 
+[2023-12-14 04:16:01] local.ERROR: foreach() argument must be of type array|object, string given {"exception":"[object] (ErrorException(code: 0): foreach() argument must be of type array|object, string given at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php:55)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php(55): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Api\\CSVerificationController.php(53): App\\Http\\Controllers\\Controller->error('[ERROR] : Merch...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\CSVerificationController->authSetup(Object(Illuminate\\Http\\Request))
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('authSetup', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\CSVerificationController), 'authSetup')
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 {main}
+"} 
+[2023-12-14 04:16:07] local.ERROR: foreach() argument must be of type array|object, string given {"exception":"[object] (ErrorException(code: 0): foreach() argument must be of type array|object, string given at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php:55)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php(55): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Api\\CSVerificationController.php(53): App\\Http\\Controllers\\Controller->error('[ERROR] : Merch...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\CSVerificationController->authSetup(Object(Illuminate\\Http\\Request))
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('authSetup', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\CSVerificationController), 'authSetup')
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 {main}
+"} 
+[2023-12-14 04:17:07] local.ERROR: foreach() argument must be of type array|object, string given {"exception":"[object] (ErrorException(code: 0): foreach() argument must be of type array|object, string given at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php:55)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php(55): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Api\\CSVerificationController.php(53): App\\Http\\Controllers\\Controller->error('[ERROR] : Merch...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\CSVerificationController->authSetup(Object(Illuminate\\Http\\Request))
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('authSetup', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\CSVerificationController), 'authSetup')
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Routing\\Route->run()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(777): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(741): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(730): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 {main}
+"} 
+[2023-12-14 04:21:48] local.ERROR: [ERROR] : MerchantID is mandatory
+
+Merchant ApikeyId is Mandatory
+
+ MerchantSecretKey is Mandatory
+
+ {"exception":"[object] (CyberSource\\Authentication\\Core\\AuthException(code: 0): [ERROR] : MerchantID is mandatory
+
+
+Merchant ApikeyId is Mandatory
+
+
+ MerchantSecretKey is Mandatory
+
+
+ at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\cybersource\\rest-client-php\\lib\\Authentication\\Core\\MerchantConfiguration.php:1130)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Helpers\\ExternalConfiguration.php(99): CyberSource\\Authentication\\Core\\MerchantConfiguration->validateMerchantData()
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Helpers\\ExternalConfiguration.php(67): App\\Helpers\\ExternalConfiguration->merchantConfigObject()
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Repositories\\CyberSourceRepository.php(80): App\\Helpers\\ExternalConfiguration->__construct()
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\HomeController.php(117): App\\Repositories\\CyberSourceRepository->createAuthentication(Array)
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->apiPost(Object(Illuminate\\Http\\Request))
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('apiPost', Array)
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'apiPost')
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#47 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#48 {main}
+"} 
+[2023-12-14 04:32:55] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7025284111366867904951',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'XXMQKci1nSO6YJ5n1MQ0',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 14 04:33:30</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="XXMQKci1nSO6YJ5n1MQ0"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="XXMQKci1nSO6YJ5n1MQ0"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-14 04:34:26] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7025285007896880104951',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'R8Kze3aFS12p6sQ3mwd0',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 14 04:34:59</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="R8Kze3aFS12p6sQ3mwd0"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="R8Kze3aFS12p6sQ3mwd0"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-14 04:36:20] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2024',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7025286164166903604951',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'IkmPYTZDDHqrlGxOsXJ0',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 14 04:36:55</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="IkmPYTZDDHqrlGxOsXJ0"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="IkmPYTZDDHqrlGxOsXJ0"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-15 11:35:10] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7026401468066441204953',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'Ef34l6e3s1nVjJPIIgn1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 15 11:35:45</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="Ef34l6e3s1nVjJPIIgn1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="Ef34l6e3s1nVjJPIIgn1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-15 11:35:40] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7026401775146448904953',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'OCt9Oir5GwON4CX5Uu91',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 15 11:36:16</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="OCt9Oir5GwON4CX5Uu91"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="OCt9Oir5GwON4CX5Uu91"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-15 12:57:34] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2024',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7026450905856599304953',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => '76u37zyPWfa15igzZCb1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 15 12:58:10</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="76u37zyPWfa15igzZCb1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="76u37zyPWfa15igzZCb1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-17 09:25:40] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7028051797196260104953',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'm80vPxMcspSiURx8CAN1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 17 09:26:19</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="m80vPxMcspSiURx8CAN1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="m80vPxMcspSiURx8CAN1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-17 09:27:50] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2024',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7028053100006279504953',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'l3P7uIhQni9f7SIFU7f1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 17 09:28:30</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="l3P7uIhQni9f7SIFU7f1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="l3P7uIhQni9f7SIFU7f1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-17 09:36:03] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7028058024876419604951',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'KMcU7weU1l4LR0SwZuu1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 17 09:36:42</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="KMcU7weU1l4LR0SwZuu1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="KMcU7weU1l4LR0SwZuu1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-17 09:41:41] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7028061414136467704951',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'gLHLL1lP8JTkOz7t1jP1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 17 09:42:20</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="gLHLL1lP8JTkOz7t1jP1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="gLHLL1lP8JTkOz7t1jP1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-17 09:41:49] local.ERROR: foreach() argument must be of type array|object, string given {"exception":"[object] (ErrorException(code: 0): foreach() argument must be of type array|object, string given at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php:55)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Controller.php(55): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'foreach() argum...', 'D:\\\\Projects\\\\NIC...', 55)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\Api\\CSVerificationController.php(53): App\\Http\\Controllers\\Controller->error('foreach() argum...')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\CSVerificationController->authSetup(Object(Illuminate\\Http\\Request))
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('authSetup', Array)
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\CSVerificationController), 'authSetup')
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 {main}
+"} 
+[2023-12-17 09:41:50] local.INFO: array (
+  'CSautheLog' => '[400] Error connecting to the API (https://apitest.cybersource.com/pts/v2/payments)',
+)  
+[2023-12-17 09:41:50] local.ERROR: Cannot access offset of type string on string {"exception":"[object] (TypeError(code: 0): Cannot access offset of type string on string at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\HomeController.php:119)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->apiPost(Object(Illuminate\\Http\\Request))
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('apiPost', Array)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'apiPost')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#44 {main}
+"} 
+[2023-12-17 09:41:53] local.INFO: array (
+  'CSautheLog' => '[400] Error connecting to the API (https://apitest.cybersource.com/pts/v2/payments)',
+)  
+[2023-12-17 09:41:53] local.ERROR: Cannot access offset of type string on string {"exception":"[object] (TypeError(code: 0): Cannot access offset of type string on string at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\HomeController.php:119)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->apiPost(Object(Illuminate\\Http\\Request))
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('apiPost', Array)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'apiPost')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#44 {main}
+"} 
+[2023-12-17 09:41:53] local.INFO: array (
+  'CSautheLog' => '[400] Error connecting to the API (https://apitest.cybersource.com/pts/v2/payments)',
+)  
+[2023-12-17 09:41:53] local.ERROR: Cannot access offset of type string on string {"exception":"[object] (TypeError(code: 0): Cannot access offset of type string on string at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\HomeController.php:119)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->apiPost(Object(Illuminate\\Http\\Request))
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('apiPost', Array)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'apiPost')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#44 {main}
+"} 
+[2023-12-17 09:41:55] local.INFO: array (
+  'CSautheLog' => '[400] Error connecting to the API (https://apitest.cybersource.com/pts/v2/payments)',
+)  
+[2023-12-17 09:41:55] local.ERROR: Cannot access offset of type string on string {"exception":"[object] (TypeError(code: 0): Cannot access offset of type string on string at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\HomeController.php:119)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->apiPost(Object(Illuminate\\Http\\Request))
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('apiPost', Array)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'apiPost')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#44 {main}
+"} 
+[2023-12-17 09:43:06] local.INFO: array (
+  'CSautheLog' => '[400] Error connecting to the API (https://apitest.cybersource.com/pts/v2/payments)',
+)  
+[2023-12-17 09:43:06] local.ERROR: Cannot access offset of type string on string {"exception":"[object] (TypeError(code: 0): Cannot access offset of type string on string at D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\app\\Http\\Controllers\\HomeController.php:119)
+[stacktrace]
+#0 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->apiPost(Object(Illuminate\\Http\\Request))
+#1 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('apiPost', Array)
+#2 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'apiPost')
+#3 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#4 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#5 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#14 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#42 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#43 D:\\Projects\\NICASIABANK\\php\\cybersource_api_test\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#44 {main}
+"} 
+[2023-12-17 09:43:19] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7028062387846421304953',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'Z4ZAI10SOl4VWKJMnkb1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 17 09:43:58</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="Z4ZAI10SOl4VWKJMnkb1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="Z4ZAI10SOl4VWKJMnkb1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-17 10:02:35] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7028073953156655904951',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'fjJWQhNxIkeBfWg06Cr1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 17 10:03:15</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="fjJWQhNxIkeBfWg06Cr1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="fjJWQhNxIkeBfWg06Cr1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  
+[2023-12-17 10:03:11] local.INFO: array (
+  'CSautheLog' => 
+  array (
+    'clientReferenceInformation' => 
+    array (
+      'code' => 'NIC12345',
+    ),
+    'consumerAuthenticationInformation' => 
+    array (
+      'referenceId' => '64827f74-99fa-4109-842e-0dbfc9738876',
+      'returnUrl' => 'https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect',
+    ),
+    'processingInformation' => 
+    array (
+      'capture' => true,
+      'actionList' => 
+      array (
+        0 => 'CONSUMER_AUTHENTICATION',
+      ),
+    ),
+    'orderInformation' => 
+    array (
+      'billTo' => 
+      array (
+        'country' => 'US',
+        'lastName' => 'VDP',
+        'address2' => 'Address 2',
+        'address1' => '201 S. Division St.',
+        'postalCode' => '48104-2201',
+        'locality' => 'Ann Arbor',
+        'administrativeArea' => 'MI',
+        'firstName' => 'RTS',
+        'phoneNumber' => '999999999',
+        'district' => 'MI',
+        'buildingNumber' => '123',
+        'company' => 'Visa',
+        'email' => 'test@cybs.com',
+      ),
+      'amountDetails' => 
+      array (
+        'totalAmount' => '1.00',
+        'currency' => 'NPR',
+      ),
+    ),
+    'paymentInformation' => 
+    array (
+      'card' => 
+      array (
+        'expirationMonth' => '03',
+        'expirationYear' => '2025',
+        'number' => '4111111111111111',
+        'securityCode' => '305',
+        'type' => '001',
+      ),
+    ),
+    'id' => '7028074305916601504953',
+    'status' => 'AUTHORIZED',
+    'authenticationInformation' => 
+    (object) array(
+       'authenticationPath' => 'NOREDIRECT',
+       'authenticationTransactionId' => 'jm8ihBftgSliOAfwJZT1',
+       'ecommerceIndicator' => 'vbv_attempted',
+       'eci' => '07',
+       'strongAuthentication' => 
+      (object) array(
+      ),
+       'proofXml' => '<AuthProof><Time>2023 Dec 17 10:03:50</Time><DSUrl>https://merchantacsstag.cardinalcommerce.com/MerchantACSWeb/vereq.jsp?acqid=CYBS</DSUrl><VEReqProof><Message id="jm8ihBftgSliOAfwJZT1"><VEReq><version>1.0.2</version><pan>XXXXXXXXXXXX1111</pan><Merchant><acqBIN>469216</acqBIN><merID>100710070000321</merID></Merchant><Browser><deviceCategory>0</deviceCategory></Browser></VEReq></Message></VEReqProof><VEResProof><Message id="jm8ihBftgSliOAfwJZT1"><VERes><version>1.0.2</version><CH><enrolled>N</enrolled></CH><protocol>ThreeDSecure</protocol></VERes></Message></VEResProof></AuthProof>',
+       'specificationVersion' => '1.0.2',
+       'veresEnrolled' => 'N',
+    ),
+    'errorInformation' => NULL,
+  ),
+)  

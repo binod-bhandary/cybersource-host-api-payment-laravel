@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Log;
 
 class CSVerificationController extends BaseApiCybersourceController
 {
-    
+
     protected $request;
     protected $repo;
 
@@ -26,13 +26,13 @@ class CSVerificationController extends BaseApiCybersourceController
     }
 
     public function authSetup(Request $request)
-    {        
+    {
 
         $data['clientReferenceInformation'] = [
             "code" => "cybs_test"
         ];
         $data['paymentInformation'] = [
-            'card' => [                
+            'card' => [
                 "type" => $request->type,
                 "expirationMonth" => $request->expiration_month,
                 "expirationYear" => $request->expiration_year,
@@ -40,7 +40,7 @@ class CSVerificationController extends BaseApiCybersourceController
             ]
         ];
 
-        try { 
+        try {
             $response = $this->repo->createAuthSetup($data);
             return $this->success($response);
 
@@ -97,7 +97,7 @@ class CSVerificationController extends BaseApiCybersourceController
             ]
         ];
 
-        try { 
+        try {
             $response = $this->repo->createAuthentication($cardParsedAry);
             return $this->success($response);
 
@@ -206,5 +206,5 @@ class CSVerificationController extends BaseApiCybersourceController
             throw new \Exception("There was error verifying your payment.");
         }
     }
-   
+
 }
