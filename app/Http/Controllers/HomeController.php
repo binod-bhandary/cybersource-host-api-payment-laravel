@@ -119,7 +119,6 @@ class HomeController extends Controller
         Log::info(['CSautheLog'=>$response]);
         if($response['status'] =='PENDING_AUTHENTICATION'){
             $data['jwt'] = $response['authenticationInformation']->accessToken;
-            return view('cybersource.api.auth-iframe', compact('data'));
         }
         elseif ($response['status'] =='AUTHORIZED'){
             $data['transacationID']= $response['authenticationInformation']->authenticationTransactionId;

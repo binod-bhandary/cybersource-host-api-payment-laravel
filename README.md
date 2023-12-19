@@ -33,6 +33,7 @@ Cybersource provides robust and secure payment solutions for processing online t
 
 ### Demo
      Link: https://developer.cybersource.com/demo/index.html
+     REST API Documentation: https://developer.cybersource.com/content/dam/docs/cybs/en-us/payer-authentication/developer/all/rest/payer-auth.pdf
 
 ## 2. Prerequisites
 
