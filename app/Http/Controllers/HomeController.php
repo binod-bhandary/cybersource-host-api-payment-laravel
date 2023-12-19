@@ -80,14 +80,14 @@ class HomeController extends Controller
             ],
             "orderInformation" => [
                 "billTo" => [
-                    "country" => "US",
-                    "lastName" => "VDP",
+                    "firstName" => "BINOD",
+                    "lastName" => "BHANDARY",
+                    "country" => "NP",
                     "address2" => "Address 2",
                     "address1" => "201 S. Division St.",
                     "postalCode" => "48104-2201",
                     "locality" => "Ann Arbor",
                     "administrativeArea" => "MI",
-                    "firstName" => "RTS",
                     "phoneNumber" => "999999999",
                     "district" => "MI",
                     "buildingNumber" => "123",
@@ -112,17 +112,18 @@ class HomeController extends Controller
 
         $data = [
             'cardinalStepUpURL' => config('csservices.live') ? config('csservices.cardinalStepUpURL_live') : config('csservices.cardinalStepUpURL'),
-            // 'jwt' =>'1234test'
-            'jwt' =>$request->_jwttoken
+            'jwt' =>'1234test'
+            // 'jwt' =>$request->_jwttoken
         ];
         $response = $this->repo->createAuthentication($cardParsedAry);
         Log::info(['CSautheLog'=>$response]);
         if($response['status'] =='PENDING_AUTHENTICATION'){
             $data['jwt'] = $response['authenticationInformation']->accessToken;
-            // $data['jwt'] = $response['authenticationInformation']->pareq;
+            return view('cybersource.api.auth-iframe', compact('data'));
         }
         elseif ($response['status'] =='AUTHORIZED'){
             $data['transacationID']= $response['authenticationInformation']->authenticationTransactionId;
+            return view('cybersource.api.authorized-payment', compact('data'));
         }
 
         return view('cybersource.api.auth-iframe', compact('data'));
@@ -150,14 +151,14 @@ class HomeController extends Controller
             ],
             "orderInformation" => [
                 "billTo" => [
-                    "country" => "US",
-                    "lastName" => "VDP",
+                    "firstName" => "BINOD",
+                    "lastName" => "BHANDARY",
+                    "country" => "NP",
                     "address2" => "Address 2",
                     "address1" => "201 S. Division St.",
                     "postalCode" => "48104-2201",
                     "locality" => "Ann Arbor",
                     "administrativeArea" => "MI",
-                    "firstName" => "RTS",
                     "phoneNumber" => "999999999",
                     "district" => "MI",
                     "buildingNumber" => "123",
@@ -197,7 +198,7 @@ class HomeController extends Controller
             'cardinalCollectionFormOrigin' => config('csservices.live') ? config('csservices.cardinalCollectionFormOrigin_live') : config('csservices.cardinalCollectionFormOrigin'),
             'accessToken' =>  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0Mjg4NDlkYy01ODJjLTQ5YTUtYTAyYS03NDFjM2I2YTgyMGUiLCJpYXQiOjE2ODk0ODgyMTMsImlzcyI6IjVlMjIwMDVmMzU2ZGNlMDNmMGY3ODcyZiIsImV4cCI6MTY4OTQ5MTgxMywiT3JnVW5pdElkIjoiNjM3NjMwNTQ2ZTE3ODY3YmU2YjdkMzIyIiwiUmVmZXJlbmNlSWQiOiJmMjAyNzIzZi1mMDc1LTQ4MzYtYTc1Yy0zMzZmMmI3NjFlNGQifQ.F2eyQIEqfLflYlpcak7vGX7VfCGdxj0zM4kJX2gmLRQ'
         ];
-        return view('cybersource.api.auth-setup-reply', compact('data'));
+        return view('cybersource.api.demo.auth-setup-reply', compact('data'));
     }
     /* STEP2:- for validation OTP */
     public function apiAuthSetupUrl()
@@ -207,6 +208,6 @@ class HomeController extends Controller
             'jwt' =>  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiYzdiNTY3NC1hNTkxLTRmYTctYWVhNi04YzQwZTNlNGE3N2UiLCJpYXQiOjE2ODk0ODkwNTIsImlzcyI6IjVlMjIwMDVmMzU2ZGNlMDNmMGY3ODcyZiIsImV4cCI6MTY4OTQ5MjY1MiwiT3JnVW5pdElkIjoiNjM3NjMwNTQ2ZTE3ODY3YmU2YjdkMzIyIiwiUGF5bG9hZCI6eyJBQ1NVcmwiOiJodHRwczovL2Fjcy5zMm1nY2MuY29tLzNkc0Fjc0Zyb250T2ZmaWNlV2ViL1ZhbGlkYXRlUGFyYW1WaXNhIiwiUGF5bG9hZCI6ImVOcFZVbHR1d2pBUS9QY3BFQWZBem91WEZrdHBnWUpFQ0FvaFNQeFp5YXFKU2dJNENhVTlmZTFBU212SjBzNnV2WjZaTllTcFJKeHVNYTRsY3ZDd0xNVTdkckprMGczUjI4OXgrSG53aWlwdzEvV3d0b3d1aDQwYjRJWERGV1dablFwdTlGalBCTnBDb2xySU9CVkZ4VUhFbDVmbG10dkRrV1ZiUUIrUVFJNXlPZVVHWXdPOW1WcVdhUUM5cHdrVUlrZStXYmlCdDUxRmJtZnJyM2JoMGw5dk81c29CTnBVQ2NTbnVxamtGM2RNRzJnTENOVHl5Tk9xT284cFBhZEM1aVZlUlM4KzVVQjFoUUI5c3R2VU9pcVY2RnVXOE9ndFdrZnNjUFFYaVFqM0R0dDl6UDBrVEEzdmV6WUJxazhRU0VTRjNHU21wWWozTzZ3L3R0allVY1NiUEFHUmF4bzhLSHZLRTZiMDNqR0JzMzdKdlNORFYvNG1sSlJhU2l6aVZrdUxDT0R0ZkNwUW5WSCsvc1pLdzVQNTYwSzdIRmZLTjdZYUxiMUJhTXhIekJsb3M1dHMweVJUMXBnMnM1b3VXZU1UMVRmcFk1VDBNWFVWL2ZzTlB4WStxL1U9IiwiVHJhbnNhY3Rpb25JZCI6IlRlTVdGZTh3Wk1udFJBTnU4dTMxIn0sIk9iamVjdGlmeVBheWxvYWQiOnRydWUsIlJldHVyblVybCI6Imh0dHBzOi8vNTk4Yy0yMDItMTY2LTE5Ny0yNTMubmdyb2stZnJlZS5hcHAvY3liZXJzb3VyY2UvcmVzcG9uc2UucGhwIn0.E-yTDii81I2vBpOOXMd3rsAkOwStXeoVx7GOPgTcaDE'
         ];
 
-        return view('cybersource.api.auth-setup-url', compact('data'));
+        return view('cybersource.api.demo.auth-setup-url', compact('data'));
     }
 }

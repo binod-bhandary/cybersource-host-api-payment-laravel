@@ -153,6 +153,7 @@
                                 class="border rounded-bl rounded-br border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
                                 type="text" name="zip" id="" placeholder="ZIP" value="44600" />
                         </div>
+
                         <input type="hidden" name="_jwttoken" id="jwt_token" value="#" />
                         <button id="pay-auth" type="submit"
                             class="mt-8 border border-transparent hover:border-gray-300 dark:bg-white dark:hover:bg-gray-900 dark:text-gray-900
