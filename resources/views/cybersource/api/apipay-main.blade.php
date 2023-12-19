@@ -102,10 +102,10 @@
                                     type="text" name="expiration_month" id="card-month-expiry" placeholder="MM" value="03" />
                                 <input
                                     class="border rounded-bl border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                                    type="text" name="expiration_year" id="card-year-expiry" placeholder="YYYY"  value="2023" />
+                                    type="text" name="expiration_year" id="card-year-expiry" placeholder="YYYY"  value="2026" />
                                 <input
                                     class="border rounded-br border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                                    type="text" name="security_code" id="card-cvc" placeholder="CVC" value="305"/>
+                                    type="text" name="security_code" id="card-cvc" placeholder="CVC" value=""/>
                             </div>
                         </div>
 
@@ -114,7 +114,7 @@
                             <div>
                                 <input
                                     class="border rounded border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                                    type="text" name="name" id="" placeholder="Name on card" value="Binod Bhandary" />
+                                    type="text" name="name" id="" placeholder="Name on card" value="" />
                             </div>
                         </div>
 
@@ -153,11 +153,10 @@
                                 class="border rounded-bl rounded-br border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
                                 type="text" name="zip" id="" placeholder="ZIP" value="44600" />
                         </div>
-
-
                         <input type="hidden" name="_jwttoken" id="jwt_token" value="#" />
                         <button id="pay-auth" type="submit"
-                            class="mt-8 border border-transparent hover:border-gray-300 dark:bg-white dark:hover:bg-gray-900 dark:text-gray-900 dark:hover:text-white dark:border-transparent bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full">
+                            class="mt-8 border border-transparent hover:border-gray-300 dark:bg-white dark:hover:bg-gray-900 dark:text-gray-900
+                             dark:hover:text-white dark:border-transparent bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full hidden">
                             <div>
                                 <p class="text-base leading-4">Pay </p>
                             </div>
@@ -178,50 +177,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 
     <script >
-        $(document).on("focusout","#card-year-expiry",function(){
+        $(document).on("focusout","#card-cvc",function(){
             var cardNum=document.getElementById('card-number').value;
             var cardMonthExpiry=document.getElementById('card-month-expiry').value;
             var cardYearExpiry=document.getElementById('card-year-expiry').value;
             var cardinalCollectionFormInput=document.getElementById('cardinal_collection_form_input');
             var jwt_token=document.getElementById('jwt_token');
             let url = '/api/cybsersource/auth-setup';
-
-            // fetch(url,
-            // {
-            //     method: 'POST',
-            //     body: JSON.stringify({
-            //         card_number:cardNum,
-            //         expiration_month:cardMonthExpiry,
-            //         expiration_year:cardYearExpiry,
-            //         type:'001', //visa
-
-            //     }),
-            //     headers: {
-            //         'Content-type': 'application/json; charset=UTF-8',
-            //         "Accept": "application/json, text-plain, */*",
-            //         "X-Requested-With": "XMLHttpRequest"
-            //     }
-            // })
-            // .then(response => {
-            //     if(response.status == 'COMPLETED'){
-            //         var form = document.createElement("form");
-            //         var element1 = document.createElement("input");
-            //         form.method = "POST";
-            //         form.action = response.clientInfomation.deviceDataCollectionUrl;
-            //         element1.value = response.clientInfomation.accessToken;
-            //         element1.name="JWT";
-            //         form.appendChild(element1);
-            //         document.body.appendChild(form);
-            //         form.submit();
-            //         console.log("verified");
-            //     }
-
-            //     // handle the response
-            // })
-            // .catch(error => {
-            //     console.log(error.getMessage());
-            //     // handle the error
-            // });
 
             $.ajax({
                 url:url,
@@ -235,62 +197,22 @@
             success:function(response){
                 console.log(response);
                 if(response.status == 'COMPLETED'){
-                    // var form = document.createElement("form");
-                    // var element1 = document.createElement("input");
-                    // form.method = "POST";
-                    // form.action = response.clientInfomation.deviceDataCollectionUrl;
-                    // element1.value = response.clientInfomation.accessToken;
-                    // element1.name="JWT";
-                    // form.appendChild(element1);
-                    // document.body.appendChild(form);
-                    // form.submit();
+                    var btnPayAuth=document.getElementById('pay-auth');
                     var cardinalCollectionForm = document.querySelector('#cardinal_collection_form');
                     cardinalCollectionForm.action     =  response.clientInfomation.deviceDataCollectionUrl;
                     cardinalCollectionFormInput.value =  response.clientInfomation.accessToken;
                     jwt_token.value =  response.clientInfomation.accessToken;
                     if (cardinalCollectionForm) cardinalCollectionForm.submit();
-                    console.log("verified");
+                    btnPayAuth.classList.remove('hidden');
                 }
             },
             error: function(error) {
+                $('#pay_auth').addClass('hidden');
                 console.log(error);
-
                }
             });
         });
-        /* pay authentication */
-        // $(document).on("click","#pay-auth",function(){
-        //     let stringdata = "{\"clientReferenceInformation\":{\"code\":\"NIC12345\"},\"consumerAuthenticationInformation\":{\"referenceId\":\"64827f74-99fa-4109-842e-0dbfc9738876\",\"returnUrl\":\"http://cybersource.test/confirm-api-pay\"},\"processingInformation\":{\"capture\":true,\"actionList\":[\"CONSUMER_AUTHENTICATION\"]},\"orderInformation\":{\"billTo\":{\"country\":\"US\",\"lastName\":\"VDP\",\"address2\":\"Address2\",\"address1\":\"201S.DivisionSt.\",\"postalCode\":\"48104-2201\",\"locality\":\"AnnArbor\",\"administrativeArea\":\"MI\",\"firstName\":\"RTS\",\"phoneNumber\":\"999999999\",\"district\":\"MI\",\"buildingNumber\":\"123\",\"company\":\"Visa\",\"email\":\"test@cybs.com\"},\"amountDetails\":{\"totalAmount\":\"1.00\",\"currency\":\"NPR\"}},\"paymentInformation\":{\"card\":{\"number\":\"4111111111111111\",\"expirationYear\":\"2024\",\"expirationMonth\":\"03\",\"securityCode\":\"123\",\"type\":\"001\"}}}";
-        //     let url = '/api/cybsersource/authentication';
-        //     fetch(url,
-        //     {
-        //         method: 'POST',
-        //         body: JSON.stringify(JSON.parse(stringdata)),
-        //         headers: {
-        //             'Content-type': 'application/json; charset=UTF-8',
-        //         }
-        //     })
-        //     .then(response => response.json())
-        //     .then(response => {
-        //         console.log(response);
-        //         if(response.status == 'PENDING_AUTHENTICATION'){
-        //             let jwt = response.authenticationInformation.accessToken;
-        //             // $.post(response.authenticationInformation.stepUpUrl,   // url
-        //             // {
-        //             //     JWT: jwt,
-        //             //     MD: 'CRA37852129',
-        //             // }, // data to be submit
-        //             // function(data, status, jqXHR) {
-        //             //     // success callback
-        //             //     // $('p').append('status: ' + status + ', data: ' + data);
-        //             // });
-        //         }
-        //     })
-        //     .catch(error => {
-        //         console.log(error.getMessage());   // handle the error
-        //     });
 
-        // });
     </script>
     <script>
         let closeIcon = document.getElementById("closeIcon");

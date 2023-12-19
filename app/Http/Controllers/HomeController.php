@@ -113,7 +113,7 @@ class HomeController extends Controller
         $data = [
             'cardinalStepUpURL' => config('csservices.live') ? config('csservices.cardinalStepUpURL_live') : config('csservices.cardinalStepUpURL'),
             // 'jwt' =>'1234test'
-            'jwt' =>$request->_jwttoken
+            // 'jwt' =>$request->_jwttoken
         ];
         $response = $this->repo->createAuthentication($cardParsedAry);
         Log::info(['CSautheLog'=>$response]);
