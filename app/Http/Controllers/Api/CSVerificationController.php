@@ -67,16 +67,19 @@ class CSVerificationController extends BaseApiCybersourceController
                     "totalAmount" => "100"
                 ],
                 "billTo" => [
-                    "address1" => "901 metro center blvd",
-                    "address2" => "metro 3",
-                    "administrativeArea" => "CA",
-                    "country" => "US",
-                    "locality" => "san francisco",
-                    "firstName" => "John",
-                    "lastName" => "Doe",
-                    "phoneNumber" => "18007097779",
-                    "postalCode" => "94404",
-                    "email" => "email@email.com"
+                    "firstName" => "BINOD",
+                    "lastName" => "BHANDARY",
+                    "country" => "NP",
+                    "address2" => "Address 2",
+                    "address1" => "201 S. Division St.",
+                    "postalCode" => "48104-2201",
+                    "locality" => "Ann Arbor",
+                    "administrativeArea" => "MI",
+                    "phoneNumber" => "999999999",
+                    "district" => "MI",
+                    "buildingNumber" => "123",
+                    "company" => "Visa",
+                    "email" => "test@cybs.com"
                 ]
             ],
             "paymentInformation" => [
@@ -93,7 +96,7 @@ class CSVerificationController extends BaseApiCybersourceController
             "consumerAuthenticationInformation" => [
                 "referenceId" => "222132d0-f2d1-4971-ba2f-6b444d9ee438",
                 "transactionMode" => "S",
-                "returnUrl" => "https://cybs-api.ngrok.io/response.php"
+                "returnUrl" => "https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect"
             ]
         ];
 

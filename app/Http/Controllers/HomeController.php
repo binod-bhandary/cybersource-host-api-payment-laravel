@@ -169,15 +169,14 @@ class HomeController extends Controller
                     "currency" => "NPR"
                 ]
             ],
-            // "paymentInformation" => [
-            //     "card" => [
-            //         "expirationMonth" => $request->expiration_month,
-            //         "expirationYear" => $request->expiration_year,
-            //         "number" => $request->card_number,
-            //         "securityCode" => $request->security_code,
-            //         "type" => "001"
-            //     ]
-            // ]
+            "paymentInformation" => [
+                "card" => [
+                    "expirationMonth" => $request->expiration_month,
+                    "expirationYear" => $request->expiration_year,
+                    "number" => $request->card_number,
+                    "type" => "001"
+                ]
+            ]
         ];
         $response = $this->repo->makePayment($cardParsedAry);
         Log::info(['CSMakePaymentLog'=>$response]);
