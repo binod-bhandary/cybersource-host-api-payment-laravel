@@ -70,7 +70,7 @@ class HomeController extends Controller
             ],
             "consumerAuthenticationInformation" => [
                 "referenceId" => "64827f74-99fa-4109-842e-0dbfc9738876",
-                "returnUrl" => "https://chilaxhouse.com.np/webhook/confirm-api-pay-redirect"
+                "returnUrl" => env('APP_URL')."/webhook/confirm-api-pay-redirect"
             ],
             "processingInformation" => [
                 "capture" => true,
@@ -174,6 +174,7 @@ class HomeController extends Controller
                     "expirationMonth" => $request->expiration_month,
                     "expirationYear" => $request->expiration_year,
                     "number" => $request->card_number,
+                    "securityCode" => $request->security_code,
                     "type" => "001"
                 ]
             ]

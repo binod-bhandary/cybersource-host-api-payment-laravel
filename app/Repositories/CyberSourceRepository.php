@@ -110,13 +110,20 @@ class CyberSourceRepository
         $orderInformation = new Ptsv2paymentsOrderInformation($data['orderInformation']);
         $consumerAuthenticationInformation = new Ptsv2paymentsConsumerAuthenticationInformation($data['consumerAuthenticationInformation']);
 
+        $paymentInformationCard = new Ptsv2paymentsPaymentInformationCard($data['paymentInformation']);
+        $paymentInformationArr = [
+                "card" => $paymentInformationCard
+        ];
+        $paymentInformation = new Ptsv2paymentsPaymentInformation($paymentInformationArr);
+
         $requestObjArr = [
             "clientReferenceInformation" => $clientReferenceInformation,
             "processingInformation" => $processingInformation,
-            // "paymentInformation" => $paymentInformation,
+            "paymentInformation" => $paymentInformation,
             "orderInformation" => $orderInformation,
             "consumerAuthenticationInformation" => $consumerAuthenticationInformation
         ];
+        Log::info(['makePayment'=>$data]);
         $requestObj = new CreatePaymentRequest($requestObjArr);
 
         $commonElement = new ExternalConfiguration();
@@ -125,7 +132,6 @@ class CyberSourceRepository
 
         $api_client = new ApiClient($config, $merchantConfig);
         $api_instance = new PaymentsApi($api_client);
-
         try {
             $apiResponse = $api_instance->createPayment($requestObj);
             $data['id'] = $apiResponse[0]['id'];

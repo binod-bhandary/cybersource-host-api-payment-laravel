@@ -94,7 +94,7 @@
                             <div>
                                 <input
                                     class="border rounded-tl rounded-tr border-gray-300 p-4 w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                                    type="text" name="card_number" id="card-number" placeholder="0000 1234 6549 15151" value="4000000000002701" />
+                                    type="text" name="card_number" id="card-number" placeholder="0000 1234 6549 15151" value="4000000000002503" />
                             </div>
                             <div class="flex-row flex">
                                 <input
