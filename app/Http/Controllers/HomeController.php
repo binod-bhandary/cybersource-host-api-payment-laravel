@@ -69,7 +69,8 @@ class HomeController extends Controller
                 "code" => "NIC12345"
             ],
             "consumerAuthenticationInformation" => [
-                "referenceId" => "64827f74-99fa-4109-842e-0dbfc9738876",
+                "referenceId" => $request->_referencecode,
+                "transactionMode"=> "S",
                 "returnUrl" => env('APP_URL')."/webhook/confirm-api-pay-redirect"
             ],
             "processingInformation" => [
@@ -82,7 +83,7 @@ class HomeController extends Controller
                 "billTo" => [
                     "firstName" => "BINOD",
                     "lastName" => "BHANDARY",
-                    "country" => "NP",
+                    "country" => "US",
                     "address2" => "Address 2",
                     "address1" => "201 S. Division St.",
                     "postalCode" => "48104-2201",
@@ -104,21 +105,21 @@ class HomeController extends Controller
                     "expirationMonth" => $request->expiration_month,
                     "expirationYear" => $request->expiration_year,
                     "number" => $request->card_number,
-                    "securityCode" => $request->security_code,
-                    "type" => "001"
+                    "securityCode" => $request->security_code
                 ]
             ]
         ];
 
         $data = [
             'cardinalStepUpURL' => config('csservices.live') ? config('csservices.cardinalStepUpURL_live') : config('csservices.cardinalStepUpURL'),
-            'jwt' =>'1234test'
-            // 'jwt' =>$request->_jwttoken
+            'jwt' =>'1234test',
+            'md' =>null
         ];
         $response = $this->repo->createAuthentication($cardParsedAry);
         Log::info(['CSautheLog'=>$response]);
         if($response['status'] =='PENDING_AUTHENTICATION'){
             $data['jwt'] = $response['authenticationInformation']->accessToken;
+            $data['md'] = $string_version = implode(',', $response['paymentInformation']['card']);
         }
         elseif ($response['status'] =='AUTHORIZED'){
             $data['transacationID']= $response['authenticationInformation']->authenticationTransactionId;
@@ -133,6 +134,7 @@ class HomeController extends Controller
     {
 
         Log::info(['CSResponseLog'=>$request->all()]);
+        $cardDetails = $destination_array = explode(',', $request->MD);
         $cardParsedAry =  [
             "clientReferenceInformation" => [
                 "code" => "NIC12345"
@@ -171,11 +173,10 @@ class HomeController extends Controller
             ],
             "paymentInformation" => [
                 "card" => [
-                    "expirationMonth" => $request->expiration_month,
-                    "expirationYear" => $request->expiration_year,
-                    "number" => $request->card_number,
-                    "securityCode" => $request->security_code,
-                    "type" => "001"
+                    "expirationMonth" => $cardDetails[0],
+                    "expirationYear" => $cardDetails[1],
+                    "number" => $cardDetails[2],
+                    "securityCode" => $cardDetails[3]
                 ]
             ]
         ];

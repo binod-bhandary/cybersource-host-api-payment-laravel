@@ -86,7 +86,7 @@ class CyberSourceRepository
 
         try {
             $apiResponse = $api_instance->createPayment($requestObj);
-            Log::info(['createAuthentication'=>$apiResponse]);
+            Log::info(['CreatePaymentData'=>$requestObjArr,'CreatePaymentRequest'=>$apiResponse]);
             $data['id'] = $apiResponse[0]['id'];
             $data['status'] = $apiResponse[0]['status'];
             $data['authenticationInformation'] = json_decode($apiResponse[0]['consumerAuthenticationInformation']);
@@ -106,15 +106,15 @@ class CyberSourceRepository
     {
         $clientReferenceInformation = new Ptsv2paymentsClientReferenceInformation($data['clientReferenceInformation']);
         $processingInformation = new Ptsv2paymentsProcessingInformation($data['processingInformation']);
-        // $paymentInformation = new Ptsv2paymentsPaymentInformation($data['paymentInformation']);
+        $paymentInformation = new Ptsv2paymentsPaymentInformation($data['paymentInformation']);
         $orderInformation = new Ptsv2paymentsOrderInformation($data['orderInformation']);
         $consumerAuthenticationInformation = new Ptsv2paymentsConsumerAuthenticationInformation($data['consumerAuthenticationInformation']);
 
-        $paymentInformationCard = new Ptsv2paymentsPaymentInformationCard($data['paymentInformation']);
-        $paymentInformationArr = [
-                "card" => $paymentInformationCard
-        ];
-        $paymentInformation = new Ptsv2paymentsPaymentInformation($paymentInformationArr);
+        // $paymentInformationCard = new Ptsv2paymentsPaymentInformationCard($data['paymentInformation']);
+        // $paymentInformationArr = [
+        //         "card" => $paymentInformationCard
+        // ];
+        // $paymentInformation = new Ptsv2paymentsPaymentInformation($paymentInformationArr);
 
         $requestObjArr = [
             "clientReferenceInformation" => $clientReferenceInformation,

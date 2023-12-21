@@ -13,7 +13,7 @@
     <div>
         <form id="step-up-form" target="step-up-iframe" method="post" action="{{ $data['cardinalStepUpURL'] }}">
             <input type="hidden" name="JWT" value="{{ $data['jwt'] }}" />
-            <input type="hidden" name="MD" value="optionally_include_custom_data_that_will_be_returned_as_is" />
+            <input type="hidden" name="MD" value="{{ $data['md'] }}" />
         </form>
     </div>
 </body>

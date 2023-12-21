@@ -155,6 +155,7 @@
                         </div>
 
                         <input type="hidden" name="_jwttoken" id="jwt_token" value="#" />
+                        <input type="hidden" name="_referencecode" id="referenceId" value="#" />
                         <button id="pay-auth" type="submit"
                             class="mt-8 border border-transparent hover:border-gray-300 dark:bg-white dark:hover:bg-gray-900 dark:text-gray-900
                              dark:hover:text-white dark:border-transparent bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full hidden">
@@ -184,6 +185,7 @@
             var cardYearExpiry=document.getElementById('card-year-expiry').value;
             var cardinalCollectionFormInput=document.getElementById('cardinal_collection_form_input');
             var jwt_token=document.getElementById('jwt_token');
+            var referenceId=document.getElementById('referenceId');
             let url = '/api/cybsersource/auth-setup';
 
             $.ajax({
@@ -203,6 +205,7 @@
                     cardinalCollectionForm.action     =  response.clientInfomation.deviceDataCollectionUrl;
                     cardinalCollectionFormInput.value =  response.clientInfomation.accessToken;
                     jwt_token.value =  response.clientInfomation.accessToken;
+                    referenceId.value =  response.clientInfomation.referenceId;
                     if (cardinalCollectionForm) cardinalCollectionForm.submit();
                     btnPayAuth.classList.remove('hidden');
                 }
